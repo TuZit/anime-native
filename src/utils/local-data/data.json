@@ -1,0 +1,384 @@
+{
+  "genresLocalData": [
+    {
+      "mal_id": 1,
+      "name": "Action",
+      "count": 5069
+    },
+    {
+      "mal_id": 2,
+      "name": "Adventure",
+      "count": 4022
+    },
+    {
+      "mal_id": 5,
+      "name": "Avant Garde",
+      "count": 890
+    },
+    {
+      "mal_id": 46,
+      "name": "Award Winning",
+      "count": 248
+    },
+    {
+      "mal_id": 28,
+      "name": "Boys Love",
+      "count": 177
+    },
+    {
+      "mal_id": 4,
+      "name": "Comedy",
+      "count": 7275
+    },
+    {
+      "mal_id": 8,
+      "name": "Drama",
+      "count": 2909
+    },
+    {
+      "mal_id": 10,
+      "name": "Fantasy",
+      "count": 5698
+    },
+    {
+      "mal_id": 26,
+      "name": "Girls Love",
+      "count": 109
+    },
+    {
+      "mal_id": 47,
+      "name": "Gourmet",
+      "count": 173
+    },
+    {
+      "mal_id": 14,
+      "name": "Horror",
+      "count": 555
+    },
+    {
+      "mal_id": 7,
+      "name": "Mystery",
+      "count": 911
+    },
+    {
+      "mal_id": 22,
+      "name": "Romance",
+      "count": 2007
+    },
+    {
+      "mal_id": 24,
+      "name": "Sci-Fi",
+      "count": 3252
+    },
+    {
+      "mal_id": 36,
+      "name": "Slice of Life",
+      "count": 1638
+    },
+    {
+      "mal_id": 30,
+      "name": "Sports",
+      "count": 762
+    },
+    {
+      "mal_id": 37,
+      "name": "Supernatural",
+      "count": 1510
+    },
+    {
+      "mal_id": 41,
+      "name": "Suspense",
+      "count": 381
+    },
+    {
+      "mal_id": 9,
+      "name": "Ecchi",
+      "count": 801
+    },
+    {
+      "mal_id": 49,
+      "name": "Erotica",
+      "count": 74
+    },
+    {
+      "mal_id": 12,
+      "name": "Hentai",
+      "count": 1517
+    },
+    {
+      "mal_id": 50,
+      "name": "Adult Cast",
+      "count": 598
+    },
+    {
+      "mal_id": 51,
+      "name": "Anthropomorphic",
+      "count": 971
+    },
+    {
+      "mal_id": 52,
+      "name": "CGDCT",
+      "count": 239
+    },
+    {
+      "mal_id": 53,
+      "name": "Childcare",
+      "count": 69
+    },
+    {
+      "mal_id": 54,
+      "name": "Combat Sports",
+      "count": 91
+    },
+    {
+      "mal_id": 81,
+      "name": "Crossdressing",
+      "count": 50
+    },
+    {
+      "mal_id": 55,
+      "name": "Delinquents",
+      "count": 73
+    },
+    {
+      "mal_id": 39,
+      "name": "Detective",
+      "count": 302
+    },
+    {
+      "mal_id": 56,
+      "name": "Educational",
+      "count": 277
+    },
+    {
+      "mal_id": 57,
+      "name": "Gag Humor",
+      "count": 245
+    },
+    {
+      "mal_id": 58,
+      "name": "Gore",
+      "count": 259
+    },
+    {
+      "mal_id": 35,
+      "name": "Harem",
+      "count": 468
+    },
+    {
+      "mal_id": 59,
+      "name": "High Stakes Game",
+      "count": 50
+    },
+    {
+      "mal_id": 13,
+      "name": "Historical",
+      "count": 1553
+    },
+    {
+      "mal_id": 60,
+      "name": "Idols (Female)",
+      "count": 320
+    },
+    {
+      "mal_id": 61,
+      "name": "Idols (Male)",
+      "count": 175
+    },
+    {
+      "mal_id": 62,
+      "name": "Isekai",
+      "count": 358
+    },
+    {
+      "mal_id": 63,
+      "name": "Iyashikei",
+      "count": 171
+    },
+    {
+      "mal_id": 64,
+      "name": "Love Polygon",
+      "count": 95
+    },
+    {
+      "mal_id": 65,
+      "name": "Magical Sex Shift",
+      "count": 30
+    },
+    {
+      "mal_id": 66,
+      "name": "Mahou Shoujo",
+      "count": 335
+    },
+    {
+      "mal_id": 17,
+      "name": "Martial Arts",
+      "count": 616
+    },
+    {
+      "mal_id": 18,
+      "name": "Mecha",
+      "count": 1267
+    },
+    {
+      "mal_id": 67,
+      "name": "Medical",
+      "count": 47
+    },
+    {
+      "mal_id": 38,
+      "name": "Military",
+      "count": 708
+    },
+    {
+      "mal_id": 19,
+      "name": "Music",
+      "count": 4421
+    },
+    {
+      "mal_id": 6,
+      "name": "Mythology",
+      "count": 650
+    },
+    {
+      "mal_id": 68,
+      "name": "Organized Crime",
+      "count": 91
+    },
+    {
+      "mal_id": 69,
+      "name": "Otaku Culture",
+      "count": 103
+    },
+    {
+      "mal_id": 20,
+      "name": "Parody",
+      "count": 766
+    },
+    {
+      "mal_id": 70,
+      "name": "Performing Arts",
+      "count": 117
+    },
+    {
+      "mal_id": 71,
+      "name": "Pets",
+      "count": 121
+    },
+    {
+      "mal_id": 40,
+      "name": "Psychological",
+      "count": 427
+    },
+    {
+      "mal_id": 3,
+      "name": "Racing",
+      "count": 254
+    },
+    {
+      "mal_id": 72,
+      "name": "Reincarnation",
+      "count": 133
+    },
+    {
+      "mal_id": 73,
+      "name": "Reverse Harem",
+      "count": 77
+    },
+    {
+      "mal_id": 74,
+      "name": "Romantic Subtext",
+      "count": 53
+    },
+    {
+      "mal_id": 21,
+      "name": "Samurai",
+      "count": 237
+    },
+    {
+      "mal_id": 23,
+      "name": "School",
+      "count": 2052
+    },
+    {
+      "mal_id": 75,
+      "name": "Showbiz",
+      "count": 42
+    },
+    {
+      "mal_id": 29,
+      "name": "Space",
+      "count": 629
+    },
+    {
+      "mal_id": 11,
+      "name": "Strategy Game",
+      "count": 327
+    },
+    {
+      "mal_id": 31,
+      "name": "Super Power",
+      "count": 708
+    },
+    {
+      "mal_id": 76,
+      "name": "Survival",
+      "count": 73
+    },
+    {
+      "mal_id": 77,
+      "name": "Team Sports",
+      "count": 307
+    },
+    {
+      "mal_id": 78,
+      "name": "Time Travel",
+      "count": 140
+    },
+    {
+      "mal_id": 32,
+      "name": "Vampire",
+      "count": 169
+    },
+    {
+      "mal_id": 79,
+      "name": "Video Game",
+      "count": 148
+    },
+    {
+      "mal_id": 80,
+      "name": "Visual Arts",
+      "count": 91
+    },
+    {
+      "mal_id": 48,
+      "name": "Workplace",
+      "count": 199
+    },
+    {
+      "mal_id": 43,
+      "name": "Josei",
+      "count": 152
+    },
+    {
+      "mal_id": 15,
+      "name": "Kids",
+      "count": 6480
+    },
+    {
+      "mal_id": 42,
+      "name": "Seinen",
+      "count": 1014
+    },
+    {
+      "mal_id": 25,
+      "name": "Shoujo",
+      "count": 483
+    },
+    {
+      "mal_id": 27,
+      "name": "Shounen",
+      "count": 1938
+    }
+  ]
+}
