@@ -2,6 +2,8 @@ import useCategoryListData from '@/hooks/useCategoryListData';
 import React from 'react';
 import { FlatList, Text, TouchableOpacity, View } from 'react-native';
 import HorizontalItem from './HorizontalItem';
+import { useNavigation } from '@react-navigation/native';
+import { CATEGORY_TYPE } from '@/utils/constant';
 
 type Props = {
   title: string;
@@ -10,6 +12,8 @@ type Props = {
 };
 
 const GenericCategoryHorizontal = ({ title, categoryId, showViewAll = true }: Props) => {
+  const navigation = useNavigation<any>();
+
   const categoryData = useCategoryListData({
     categoryId: categoryId,
   });
@@ -19,7 +23,14 @@ const GenericCategoryHorizontal = ({ title, categoryId, showViewAll = true }: Pr
       <View className='flex-row justify-between items-center'>
         <Text className='text-xl font-bold mb-1'>{title}</Text>
         {showViewAll && (
-          <TouchableOpacity>
+          <TouchableOpacity
+            onPress={() =>
+              navigation.navigate('category', {
+                type: CATEGORY_TYPE.NORMAL,
+                categoryId,
+              })
+            }
+          >
             <Text className='text-base'>View all..</Text>
           </TouchableOpacity>
         )}

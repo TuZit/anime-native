@@ -84,9 +84,13 @@ const AnimeDetail = () => {
             </View>
             <View className='flex-row items-center justify-center gap-3'>
               {detailAnime?.genres?.map((genre: any) => (
-                <View className='border rounded-full border-yellow-600 p-2' key={genre?.mal_id}>
+                <TouchableOpacity
+                  className='border rounded-full border-yellow-600 p-2'
+                  key={genre?.mal_id}
+                  // onPress={() => navigation.navigate('')}
+                >
                   <Text>{genre?.name}</Text>
-                </View>
+                </TouchableOpacity>
               ))}
             </View>
           </View>

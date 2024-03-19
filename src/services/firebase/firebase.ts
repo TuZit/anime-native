@@ -5,12 +5,12 @@ import { initializeAuth } from 'firebase/auth';
 import { getFirestore } from 'firebase/firestore';
 
 const firebaseConfig = {
-  apiKey: 'AIzaSyA9chvi_jPOfidE_wwSo3OGigMtHo_Pld8',
+  apiKey: process.env.FIREBASE_KEY,
   authDomain: 'chatapp-e7017.firebaseapp.com',
   projectId: 'chatapp-e7017',
   storageBucket: 'chatapp-e7017.appspot.com',
   messagingSenderId: '1088900477241',
-  appId: '1:1088900477241:web:ec56460d45982b6d7038e8',
+  appId: process.env.FIREBASE_APP_ID,
   measurementId: 'G-B7PP2H5J7G',
 };
 

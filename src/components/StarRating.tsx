@@ -5,10 +5,11 @@ import { Rating } from 'react-native-ratings';
 export interface StarRatingProps extends ViewProps {
   score: number;
   scoredBy: number;
+  imageSize?: number;
 }
 
 function StarRating(props: StarRatingProps) {
-  const { score, scoredBy } = props;
+  const { score, scoredBy, imageSize = 20 } = props;
 
   return (
     <View className='flex-row items-center'>
@@ -17,7 +18,7 @@ function StarRating(props: StarRatingProps) {
           type='custom'
           ratingCount={5}
           readonly
-          imageSize={20}
+          imageSize={imageSize}
           fractions={1}
           startingValue={props.score}
           ratingColor={'#DEC9AB'}

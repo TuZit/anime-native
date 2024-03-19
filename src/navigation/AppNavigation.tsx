@@ -1,16 +1,14 @@
-/* eslint-disable react/no-unstable-nested-components */
+import AnimeDetail from '@/screens/Anime/AnimeDetail';
+import Profile from '@/screens/Anime/ProducerProfile';
 import Home from '@/screens/Home';
-import Profile from '@/screens/ProducerProfile';
 import Search from '@/screens/Search';
+import { NavigationContainer } from '@react-navigation/native';
 import { createNativeStackNavigator } from '@react-navigation/native-stack';
 import React from 'react';
-import { NavigationContainer } from '@react-navigation/native';
-import { createBottomTabNavigator } from '@react-navigation/bottom-tabs';
-import { HomeIcon, MagnifyingGlassIcon, UserIcon } from 'react-native-heroicons/solid';
-import AnimeDetail from '@/screens/Anime/AnimeDetail';
+import BottomStack from './BottomStack';
+import ListAnimeWithGenre from '@/screens/Anime/ListAnimeWithGenre';
 
 const Stack = createNativeStackNavigator();
-const BottomTab = createBottomTabNavigator();
 
 function AppStack() {
   return (
@@ -24,71 +22,10 @@ function AppStack() {
       <Stack.Screen name='search' component={Search} />
       <Stack.Screen name='profile' component={Profile} />
       <Stack.Screen name='anime-detail' component={AnimeDetail} />
+      <Stack.Screen name='category' component={ListAnimeWithGenre} />
 
       <Stack.Screen name='bottom-bar' component={BottomStack} />
     </Stack.Navigator>
-  );
-}
-
-function BottomStack() {
-  return (
-    <BottomTab.Navigator
-      initialRouteName='home'
-      screenOptions={() => ({
-        // tabBarShowLabel: false,
-        tabBarHideOnKeyboard: false,
-        headerShown: false,
-        tabBarStyle: {
-          height: 50,
-          position: 'absolute',
-          bottom: 4,
-          left: 16,
-          right: 16,
-          borderRadius: 25,
-          fontSize: 20,
-        },
-        tabBarLabelStyle: {
-          fontSize: 14,
-          marginBottom: 3,
-          marginTop: 3,
-        },
-        tabBarActiveTintColor: 'black',
-        tabBarIconStyle: {
-          marginTop: 5,
-        },
-      })}
-    >
-      <BottomTab.Screen
-        name='home'
-        component={Home}
-        options={{
-          tabBarIcon: ({ focused }) => {
-            return <HomeIcon size={22} fill={focused ? 'black' : '#DEC9AB'} />;
-          },
-          title: 'Home',
-        }}
-      />
-      <BottomTab.Screen
-        name='search'
-        component={Search}
-        options={{
-          tabBarIcon: ({ focused }) => {
-            return <MagnifyingGlassIcon size={22} fill={focused ? 'black' : '#DEC9AB'} />;
-          },
-          title: 'Search',
-        }}
-      />
-      <BottomTab.Screen
-        name='profile'
-        component={Profile}
-        options={{
-          tabBarIcon: ({ focused }) => {
-            return <UserIcon size={22} fill={focused ? 'black' : '#DEC9AB'} />;
-          },
-          title: 'Profile',
-        }}
-      />
-    </BottomTab.Navigator>
   );
 }
 

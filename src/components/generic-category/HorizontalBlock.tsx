@@ -1,6 +1,8 @@
 import React from 'react';
 import { View, Text, FlatList, TouchableOpacity } from 'react-native';
 import HorizontalItem from './HorizontalItem';
+import { useNavigation } from '@react-navigation/native';
+import { CATEGORY_TYPE } from '@/utils/constant';
 
 type Props = {
   title: string;
@@ -9,12 +11,20 @@ type Props = {
 };
 
 const HorizontalBlock = ({ title, data, showViewAll = true }: Props) => {
+  const navigation = useNavigation<any>();
+
   return (
     <View className='mt-2 mb-4 min-h-[250px]'>
       <View className='flex-row justify-between items-center'>
         <Text className='text-xl font-bold mb-1'>{title}</Text>
         {showViewAll && (
-          <TouchableOpacity>
+          <TouchableOpacity
+            onPress={() =>
+              navigation.navigate('category', {
+                type: CATEGORY_TYPE.TOP_ANIME,
+              })
+            }
+          >
             <Text className='text-base'>View all..</Text>
           </TouchableOpacity>
         )}
