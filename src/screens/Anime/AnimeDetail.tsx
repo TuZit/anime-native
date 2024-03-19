@@ -14,7 +14,7 @@ type Params = {
 const AnimeDetail = () => {
   const { params } = useRoute<RouteProp<Record<string, Params>, string>>();
   const animeId = params?.animeId;
-  const navigation = useNavigation();
+  const navigation = useNavigation<any>();
   const height = Dimensions.get('screen').height;
 
   const [detailAnime, setDetailAnime] = useState<any>();
@@ -99,7 +99,14 @@ const AnimeDetail = () => {
           <View className='mt-8 mx-4'>
             <Text className='text-2xl font-bold'>Producers</Text>
             {detailAnime?.producers?.map((producer: any) => (
-              <TouchableOpacity key={producer?.mal_id} onPress={() => {}}>
+              <TouchableOpacity
+                key={producer?.mal_id}
+                onPress={() =>
+                  navigation.navigate('profile', {
+                    producerId: producer?.mal_id,
+                  })
+                }
+              >
                 <Text className='mt-1 text-base underline decoration-[#DEC9AB] text-[#DEC9AB]'>
                   {producer.name}
                 </Text>

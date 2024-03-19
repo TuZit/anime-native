@@ -1,6 +1,6 @@
 /* eslint-disable react/no-unstable-nested-components */
 import Home from '@/screens/Home';
-import Profile from '@/screens/Profile';
+import Profile from '@/screens/ProducerProfile';
 import Search from '@/screens/Search';
 import { createNativeStackNavigator } from '@react-navigation/native-stack';
 import React from 'react';
