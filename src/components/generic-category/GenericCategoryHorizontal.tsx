@@ -33,6 +33,7 @@ const GenericCategoryHorizontal = ({ title, categoryId, showViewAll = true }: Pr
             thumbUrl={item?.images?.jpg?.image_url}
             name={item?.title}
             score={item?.score}
+            animeId={item?.mal_id}
           />
         )}
         keyExtractor={(item: any) => item?.mal_id}

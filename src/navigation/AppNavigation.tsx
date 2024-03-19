@@ -7,6 +7,7 @@ import React from 'react';
 import { NavigationContainer } from '@react-navigation/native';
 import { createBottomTabNavigator } from '@react-navigation/bottom-tabs';
 import { HomeIcon, MagnifyingGlassIcon, UserIcon } from 'react-native-heroicons/solid';
+import AnimeDetail from '@/screens/Anime/AnimeDetail';
 
 const Stack = createNativeStackNavigator();
 const BottomTab = createBottomTabNavigator();
@@ -22,21 +23,12 @@ function AppStack() {
       <Stack.Screen name='home' component={Home} />
       <Stack.Screen name='search' component={Search} />
       <Stack.Screen name='profile' component={Profile} />
+      <Stack.Screen name='anime-detail' component={AnimeDetail} />
 
       <Stack.Screen name='bottom-bar' component={BottomStack} />
     </Stack.Navigator>
   );
 }
-
-// function AuthStack() {
-//   return (
-//     <Stack.Navigator
-//       initialRouteName='login'
-//       screenOptions={{
-//         headerShown: false,
-//       }}
-//     >
-// }
 
 function BottomStack() {
   return (
